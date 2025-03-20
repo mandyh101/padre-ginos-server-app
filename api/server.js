@@ -1,4 +1,6 @@
 import fastify from "fastify";
+import path from "path";
+import { fileURLToPath } from "url";
 import { AsyncDatabase } from "promised-sqlite3";
 
 const server = fastify({
@@ -12,6 +14,9 @@ const server = fastify({
 const PORT = process.env.PORT || 3000;
 // Create a HOST property after the PORT property for Render (our server app hosting service) to bind to
 const HOST = "RENDER" in process.env ? `0.0.0.0` : `localhost`;
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const db = await AsyncDatabase.open("./pizza.sqlite");
 
