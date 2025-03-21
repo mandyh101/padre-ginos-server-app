@@ -8,7 +8,15 @@ This is part of a project I built following along with the Frontend Masters Comp
 - Fastify
 
 ## Deploy
+- cd into the api folder `cd api`
+- `npm install`
+- `npm start`
+
+### Render
+Render dashboard: *https://padre-ginos-server-app.onrender.com* (password protected)
+Test the api: https://padre-ginos-server-app.onrender.com/api/pizzas (yes, it's slow! Free tier life baby!)
 
 ## Visit the pizza restaurant
-Github for the code:
-Website for the pizza:
+Github for the code: https://github.com/mandyh101/padre-ginos
+
+Website for the pizza: https://mandy-padre-ginos.netlify.app/
